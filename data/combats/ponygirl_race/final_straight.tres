@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://bpr6finalstr01"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://lh7k7vwalr0w" path="res://assets/img/frozenhunter/ponygirl_race_finish.png" id="3"]
+
+[sub_resource type="Resource" id="Resource_a"]
+script = ExtResource("1")
+txt = "Ask for everything"
+ability = 1
+success_description = "You throw the reins at her. {PONYNAME} finds a last, ugly, honest sprint. The ribbon slaps her chest a neck in front."
+fail_description = "There is nothing left. {PONYNAME} tries, legs gone to water, and the relentless mare on your outside eats you in the last three strides."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_b"]
+script = ExtResource("1")
+txt = "Time the kick"
+ability = 5
+success_description = "You wait until the rival commits. Then you ask. {PONYNAME} goes by so late the crowd is already shouting the wrong name."
+fail_description = "You wait a fraction too long. The kick is real, but the post arrives first."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_c"]
+script = ExtResource("1")
+txt = "Make her want it"
+ability = 2
+success_description = "You promise her the carrot, the praise, the finish. {PONYNAME} believes you. She wants the post more than she wants air."
+fail_description = "She is past wanting. Your voice is just more noise at the end of a long race."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2")
+img = ExtResource("3")
+flavor_lines = Array[String](["The finish-post is a white tooth in the dust.", "The crowd has gone from chatter to one long roar.", "A rival’s breath is right on {PONYNAME}’s hip.", "Your crop is still clean. You have been saving it."])
+description = "The last straight. Two, maybe three mares still in it. {PONYNAME}’s mouth is white with foam. Whoever asks right now owns the purse."
+actions = Array[ExtResource("1")]([SubResource("Resource_a"), SubResource("Resource_b"), SubResource("Resource_c")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

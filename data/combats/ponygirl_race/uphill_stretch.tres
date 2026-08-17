@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_wt8mo"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_1iw82"]
+[ext_resource type="Texture2D" uid="uid://de3hrut8wq0j8" path="res://assets/img/frozenhunter/ponygirl_race_hill.png" id="3_plate"]
 
 [sub_resource type="Resource" id="Resource_6ajbb"]
 script = ExtResource("1_wt8mo")
@@ -37,6 +38,7 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 
 [resource]
 script = ExtResource("2_1iw82")
+img = ExtResource("3_plate")
 flavor_lines = Array[String](["The hill is much longer than it looked from the starting line.", "Sweat darkens the straps of {PONYNAME}’s harness.", "{PONYNAME} gasps for breath with every punishing step."])
 description = "The course opens into a long uphill stretch. Muscles burn, breathing grows ragged, and the less-conditioned racers begin to fall behind. {PONYNAME}’s chest heaves as she fights the slope."
 actions = Array[ExtResource("1_wt8mo")]([SubResource("Resource_6ajbb"), SubResource("Resource_utola"), SubResource("Resource_qoo3j"), SubResource("Resource_qxi5k")])

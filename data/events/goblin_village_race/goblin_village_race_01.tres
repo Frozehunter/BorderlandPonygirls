@@ -13,6 +13,7 @@
 [ext_resource type="Resource" uid="uid://4nc4i7ra5iio" path="res://data/flags/owns_racing_gear.tres" id="9_uf0eq"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="10_g4eg8"]
 [ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="10_kwfdy"]
+[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/frozenhunter/ponygirl_race_start.png" id="99_raceimg"]
 
 [sub_resource type="Resource" id="Resource_wfqit"]
 script = ExtResource("4_kwfdy")
@@ -86,6 +87,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("3_lqno4")
 titel = "Goblin Village Scramble"
+img = ExtResource("99_raceimg")
 description = "You hear the racetrack long before you see it. Goblins shout, drums pound, and an excited crowd roars whenever a ponygirl passes the crude wooden stands.
 
 The village has turned an old training ground into its own racing circuit, and almost everyone has come to watch."

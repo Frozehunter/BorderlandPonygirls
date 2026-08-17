@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_y2tgd"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_eh3wh"]
+[ext_resource type="Texture2D" uid="uid://drp71ni3i5v1q" path="res://assets/img/frozenhunter/ponygirl_race_turn.png" id="3_plate"]
 
 [sub_resource type="Resource" id="Resource_twfuc"]
 script = ExtResource("1_y2tgd")
@@ -37,6 +38,7 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 
 [resource]
 script = ExtResource("2_eh3wh")
+img = ExtResource("3_plate")
 flavor_lines = Array[String](["Dust hangs in a low cloud over the packed track.", "The crowd leans over the fence as the racers bunch together.", "Feet pound against the dirt while harness leather creaks under the strain."])
 description = "The racers charge into a sharp bend, nearly shoulder to shoulder. Rivals press close, trying to force one another onto the slower outside lane. {PONYNAME} tenses and instinctively tries to slow down, but a sharp flick of your crop urges her forward instead."
 actions = Array[ExtResource("1_y2tgd")]([SubResource("Resource_twfuc"), SubResource("Resource_dmpo5"), SubResource("Resource_7qxbw"), SubResource("Resource_k2p1h")])

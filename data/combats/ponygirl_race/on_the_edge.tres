@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_d5ai7"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_gm165"]
+[ext_resource type="Texture2D" uid="uid://dyt603mfawukk" path="res://assets/img/frozenhunter/ponygirl_race_edge.png" id="3_plate"]
 
 [sub_resource type="Resource" id="Resource_v7ss7"]
 script = ExtResource("1_d5ai7")
@@ -37,6 +38,7 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 
 [resource]
 script = ExtResource("2_gm165")
+img = ExtResource("3_plate")
 flavor_lines = Array[String](["A moan rolls through the field, making several racers falter.", "The scent of heat hangs in the air.", "{PONYNAME}’s stride grows uneven as the need builds inside her."])
 description = "A rider ahead seemingly has worked his mare too hard before the race. She goes over the edge mid-race, climaxing loudly enough for the entire field to hear. Like an infection the other mares begin to buckle too, most already trembling on the edge."
 actions = Array[ExtResource("1_d5ai7")]([SubResource("Resource_v7ss7"), SubResource("Resource_7b08a"), SubResource("Resource_xogs0"), SubResource("Resource_gipnr")])

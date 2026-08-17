@@ -10,6 +10,7 @@
 [ext_resource type="Script" uid="uid://ccm3riyfg6rfl" path="res://data/events/event_random_text.gd" id="7_10abt"]
 [ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="8_lvu3u"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="9_oohyi"]
+[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/frozenhunter/ponygirl_race_start.png" id="99_raceimg"]
 
 [sub_resource type="Resource" id="Resource_5fsgt"]
 script = ExtResource("6_grxs5")
@@ -63,6 +64,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("3_6x70x")
 titel = "Ponygirl Race Announced"
+img = ExtResource("99_raceimg")
 content = Array[ExtResource("2_q0iyf")]([SubResource("Resource_lkv00"), SubResource("Resource_blc0r")])
 open_actions = Array[ExtResource("1_5w5r2")]([SubResource("Resource_gjll1")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

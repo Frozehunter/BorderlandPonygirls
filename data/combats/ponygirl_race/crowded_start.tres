@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="CombatScene" format=3 uid="uid://bpr6crowdedst1"]
+
+[ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1"]
+[ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/frozenhunter/ponygirl_race_start.png" id="3"]
+
+[sub_resource type="Resource" id="Resource_a"]
+script = ExtResource("1")
+txt = "Break clean"
+ability = 5
+success_description = "The rope drops. {PONYNAME} is already leaning. She hits her stride before the rivals have finished fighting their bits."
+fail_description = "{PONYNAME} anticipates, then checks. The clean break belongs to the fierce mare two stalls down."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_b"]
+script = ExtResource("1")
+txt = "Hold, then jump"
+ability = 3
+success_description = "You sit still through the fidgeting. When the line goes you ask once. {PONYNAME} explodes into the hole the early movers left."
+fail_description = "You hold too long. The pack is gone, and {PONYNAME} has to chase dirt."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[sub_resource type="Resource" id="Resource_c"]
+script = ExtResource("1")
+txt = "Crowd the neighbor"
+ability = 1
+success_description = "You let {PONYNAME} lean at the break. The rival next to you is squeezed off her line and has to sit up. First turn is yours."
+fail_description = "The neighbor is tougher. She slams back, and {PONYNAME} leaves the posts already unbalanced."
+metadata/_custom_type_script = "uid://c62fr7oiolt4o"
+
+[resource]
+script = ExtResource("2")
+img = ExtResource("3")
+flavor_lines = Array[String](["The start-rope twitches in a steward’s fist.", "Bits champ. Someone’s mare stamps until dust rises.", "A horn somewhere in the crowd tries to be official.", "{PONYNAME} is already wet at the strap, wound too tight for a standing start."])
+description = "The field bunches at the posts. Too many mares, not enough dirt. A false twitch goes through the line. If you break messy, the whole first furlong is someone else’s."
+actions = Array[ExtResource("1")]([SubResource("Resource_a"), SubResource("Resource_b"), SubResource("Resource_c")])
+metadata/_custom_type_script = "uid://c1qiogsydlipg"

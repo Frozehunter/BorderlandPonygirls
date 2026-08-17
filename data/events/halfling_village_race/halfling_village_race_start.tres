@@ -12,6 +12,7 @@
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="10_em653"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="11_4v8sr"]
 [ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="11_rw0fj"]
+[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/frozenhunter/ponygirl_race_start.png" id="99_raceimg"]
 
 [sub_resource type="Resource" id="Resource_4inwj"]
 script = ExtResource("4_pdny1")
@@ -86,6 +87,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("11_4v8sr")
 titel = "Halfling Village Derby"
+img = ExtResource("99_raceimg")
 description = "You arrive at the racetrack to find it packed with excited onlookers, all eager to witness one of those fancy ponygirl races everyone has been talking about."
 content = Array[ExtResource("2_rw0fj")]([SubResource("Resource_rusv4"), SubResource("Resource_2u8ah"), SubResource("Resource_7nnse"), SubResource("Resource_m6gfv"), SubResource("Resource_1fkpw"), SubResource("Resource_pxexv")])
 open_actions = Array[ExtResource("1_qfde6")]([SubResource("Resource_ok1ty")])

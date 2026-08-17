@@ -13,6 +13,7 @@
 [ext_resource type="Resource" uid="uid://bdus8t7770tyt" path="res://data/flags/knows_about_ponygirl_racing.tres" id="11_n3r3q"]
 [ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="12_yfc08"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="13_nxofj"]
+[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/frozenhunter/ponygirl_race_start.png" id="99_raceimg"]
 
 [sub_resource type="Resource" id="Resource_uyx4y"]
 script = ExtResource("4_walxc")
@@ -93,6 +94,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("13_nxofj")
 titel = "Harbortown Circuit"
+img = ExtResource("99_raceimg")
 description = "You arrive at Harbortown’s racetrack to find the old freight yard transformed. Colorful banners hang between the warehouses, temporary stands rise along the course, and a large crowd has gathered to witness the city’s latest sensation."
 content = Array[ExtResource("2_pkmrc")]([SubResource("Resource_loak1"), SubResource("Resource_elyge"), SubResource("Resource_78x5n"), SubResource("Resource_ohnjp"), SubResource("Resource_6tbqf"), SubResource("Resource_dfvfa")])
 open_actions = Array[ExtResource("1_gd47x")]([SubResource("Resource_ma5mm")])

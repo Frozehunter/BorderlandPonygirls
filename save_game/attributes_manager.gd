@@ -1,12 +1,12 @@
 extends Resource
 class_name AttributesManager
 
-const MAX_HEALTH := 5
+const MAX_HEALTH := 10
 const BASE_ABILITY_VALUE := 60
 
 @export var _boss_title: String = ""
 @export var _boss_name: String = ""
-@export var _gold: int = 2500
+@export var _gold: int = 250
 @export var _repute: int = 50
 @export var _current_health: int = MAX_HEALTH
 

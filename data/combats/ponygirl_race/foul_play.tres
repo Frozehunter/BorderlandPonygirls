@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c62fr7oiolt4o" path="res://data/combats/combat_action.gd" id="1_tpilm"]
 [ext_resource type="Script" uid="uid://c1qiogsydlipg" path="res://data/combats/combat_scene.gd" id="2_3qvwy"]
+[ext_resource type="Texture2D" uid="uid://bqhidh7iut34u" path="res://assets/img/frozenhunter/ponygirl_race_start.png" id="3_plate"]
 
 [sub_resource type="Resource" id="Resource_gipnr"]
 script = ExtResource("1_tpilm")
@@ -37,6 +38,7 @@ metadata/_custom_type_script = "uid://c62fr7oiolt4o"
 
 [resource]
 script = ExtResource("2_3qvwy")
+img = ExtResource("3_plate")
 flavor_lines = Array[String](["Leather snaps too close to {PONYNAME}’s flank.", "The rival’s shoulder keeps drifting in, testing.", "Dust and curses fly between the two of you.", "{PONYNAME}’s ears pin flat as the interference continues."])
 description = "A rider on your outside decides the clean race is over. His crop reaches across the gap, or his mare leans in with deliberate weight, trying to break {PONYNAME}’s rhythm before the next bend."
 actions = Array[ExtResource("1_tpilm")]([SubResource("Resource_gipnr"), SubResource("Resource_km0ag"), SubResource("Resource_ubyto"), SubResource("Resource_gv75r")])

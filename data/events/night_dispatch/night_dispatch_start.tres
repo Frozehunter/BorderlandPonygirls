@@ -60,7 +60,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("9")
 titel = "Night Dispatch"
-description = "A post guard with a lantern on his belt stops you at the palisade gate.
+description = "A post guard with a lantern on her belt stops you at the palisade gate.
 
 \"{TITLE}. Sealed packet for the Goblin Village. Night road. Do not open it. Do not break the seal. The village elder will pay you.\""
 img = ExtResource("10")

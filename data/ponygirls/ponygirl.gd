@@ -98,13 +98,47 @@ func _update_perks():
 	_update_background_perks()
 
 func _update_normal_perks() -> void:
-	var list_of_perks = GameData.list_of_perks.duplicate()
+	_drop_duplicate_groups()
+	var list_of_perks: Array = GameData.list_of_perks.duplicate()
 	list_of_perks.shuffle()
-	while get_amount_of_normal_perks() < min(level, 3):
-		var perk = list_of_perks.pop_front()
-		if perk.background: continue
-		if perks.has(perk): continue
+	var target := mini(level, 3)
+	while get_amount_of_normal_perks() < target and not list_of_perks.is_empty():
+		var perk: Perk = list_of_perks.pop_front()
+		if perk == null or perk.background:
+			continue
+		if perks.has(perk):
+			continue
+		if not _can_add_perk(perk):
+			continue
 		perks.push_back(perk)
+
+func _can_add_perk(perk: Perk) -> bool:
+	if perk.group == Perk.GROUPS.NONE:
+		return true
+	return not _has_perk_group(perk.group)
+
+func _has_perk_group(group: Perk.GROUPS) -> bool:
+	for existing in perks:
+		if existing == null or existing.background:
+			continue
+		if existing.group == group:
+			return true
+	return false
+
+func _drop_duplicate_groups() -> void:
+	var seen: Dictionary = {}
+	var kept: Array[Perk] = []
+	for perk in perks:
+		if perk == null:
+			continue
+		if perk.background or perk.group == Perk.GROUPS.NONE:
+			kept.append(perk)
+			continue
+		if seen.has(perk.group):
+			continue
+		seen[perk.group] = true
+		kept.append(perk)
+	perks = kept
 
 func get_amount_of_normal_perks() -> int:
 	var amount := 0

@@ -15,7 +15,6 @@
 [ext_resource type="Resource" uid="uid://bb6t5y2nu83pj" path="res://data/perks/strong.tres" id="8_strong"]
 [ext_resource type="Resource" uid="uid://2vmtjdwwxxth" path="res://data/perks/hardy.tres" id="9_hardy"]
 [ext_resource type="Resource" uid="uid://dub26o84xa7yv" path="res://data/perks/stubborn.tres" id="10_wild"]
-[ext_resource type="Resource" uid="uid://bgcens45256st" path="res://data/perks/brat.tres" id="11_brat"]
 
 [sub_resource type="Resource" id="Resource_loyal_desc"]
 script = ExtResource("1")
@@ -155,7 +154,7 @@ metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [sub_resource type="Resource" id="Resource_wild_desc"]
 script = ExtResource("1")
-txt = "She stamps and rolls her eyes at the crowd. Wild temper, high spirit - costly, but she has fire and the Wild perk."
+txt = "She stamps and rolls her eyes at the crowd. Wild temper, high spirit - costly, but she has fire and the Stubborn perk."
 metadata/_custom_type_script = "uid://cjt27rj7fiwsv"
 
 [sub_resource type="Resource" id="Resource_wild_gold"]
@@ -168,7 +167,7 @@ script = ExtResource("3")
 force_submission = 35
 force_arousal = 55
 force_xp = 30
-perks = Array[ExtResource("6_svys2")]([ExtResource("10_wild"), ExtResource("11_brat")])
+perks = Array[ExtResource("6_svys2")]([ExtResource("10_wild")])
 metadata/_custom_type_script = "uid://dpu27o7lu670x"
 
 [sub_resource type="Resource" id="Resource_wild_back"]

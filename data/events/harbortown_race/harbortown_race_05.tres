@@ -5,9 +5,6 @@
 [ext_resource type="Resource" uid="uid://d0a01txmm6nyn" path="res://data/combats/ponygirl_race/harbortown_race.tres" id="3_ma5mm"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_vhapx"]
 [ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="4_loak1"]
-[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="5_flag"]
-[ext_resource type="Resource" uid="uid://dpwvg6s8s1qbi" path="res://data/flags/ponygirl_race_announced.tres" id="6_ann"]
-[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="7_flag"]
 [ext_resource type="Script" uid="uid://ceventponysel1" path="res://data/events/event_pony_select.gd" id="8_pick"]
 
 [sub_resource type="Resource" id="Resource_j1sbj"]
@@ -15,15 +12,10 @@ script = ExtResource("4_loak1")
 combat = ExtResource("3_ma5mm")
 metadata/_custom_type_script = "uid://bnjeril1f2cy8"
 
-[sub_resource type="Resource" id="Resource_clear"]
-script = ExtResource("7_flag")
-remove_flag = Array[ExtResource("5_flag")]([ExtResource("6_ann")])
-metadata/_custom_type_script = "uid://ta4rmpl13bdw"
-
 [sub_resource type="Resource" id="Resource_aimwn"]
 script = ExtResource("8_pick")
 button_txt = "Race with %s"
-actions = Array[ExtResource("1_igepf")]([SubResource("Resource_clear"), SubResource("Resource_j1sbj")])
+actions = Array[ExtResource("1_igepf")]([SubResource("Resource_j1sbj")])
 metadata/_custom_type_script = "uid://ceventponysel1"
 
 [resource]

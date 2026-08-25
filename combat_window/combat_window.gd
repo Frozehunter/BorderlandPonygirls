@@ -29,17 +29,27 @@ func _update():
 		_normal_scene_update()
 
 func _normal_scene_update():
-	scene_title.text = CombatManager.current_combat.title
+	var scene := CombatManager.current_scene
+	var combat := CombatManager.current_combat
+	scene_title.text = combat.title if combat else "Combat"
 	scene_description.text = ""
-	if CombatManager.current_scene.flavor_lines.size() > 0:
-		CombatManager.current_scene.flavor_lines.shuffle()
-		scene_description.text += Utils.translate(CombatManager.current_scene.flavor_lines[0])
+	if scene == null:
+		scene_description.text = "The fight falls apart before it can begin."
+		content_image.texture = null
+		for btn in actions_container.get_children():
+			btn.queue_free()
+		actions_container.visible = false
+		end_combat_btn.visible = true
+		return
+	if scene.flavor_lines.size() > 0:
+		scene.flavor_lines.shuffle()
+		scene_description.text += Utils.translate(scene.flavor_lines[0])
 		scene_description.text += "\n\n"
-	scene_description.text += Utils.translate(CombatManager.current_scene.description)
-	content_image.texture = CombatManager.current_scene.img
+	scene_description.text += Utils.translate(scene.description)
+	content_image.texture = scene.img
 	for btn in actions_container.get_children():
 		btn.queue_free()
-	for action in CombatManager.current_scene.get_actions():
+	for action in scene.get_actions():
 		var b = COMBAT_BTN.instantiate()
 		b.action = action
 		actions_container.add_child(b)

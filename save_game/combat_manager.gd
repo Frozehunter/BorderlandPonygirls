@@ -52,6 +52,9 @@ static func start_combat() -> void:
 	last_scene = null
 
 static func select_next_scene() -> void:
+	if current_combat == null:
+		current_scene = null
+		return
 	if not current_combat.keep_focused_ponygirl:
 		PonygirlManager.focused_ponygirl = PonygirlManager.get_random_active_ponygirl()
 	last_scene = current_scene

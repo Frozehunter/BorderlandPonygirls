@@ -1,15 +1,22 @@
 [gd_resource type="Resource" script_class="Event" format=3 uid="uid://c4m9r1h6ts0ql"]
 
-[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="1"]
-[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_nrmlb"]
-[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_cj45v"]
-[ext_resource type="Texture2D" uid="uid://cadushsnrgtvk" path="res://assets/img/frozenhunter/hay_wain.png" id="3_f71yy"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://cadushsnrgtvk" path="res://assets/img/frozenhunter/hay_wain.png" id="5"]
+
+[sub_resource type="Resource" id="Resource_road"]
+script = ExtResource("3")
+txt = "Goblin road"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]
-script = ExtResource("1")
+script = ExtResource("4")
 titel = "Hay Wain"
 description = "The farmer lashes the last bundle and slaps the wheel. \"Goblin stables, the long barn. Tell them Halfling second-cut. They'll stop boiling boot-leather for the she-beasts.\"
 
 Straw sticks in your lead mare's mane all the way out of the lane."
-img = ExtResource("3_f71yy")
+img = ExtResource("5")
+content = Array[ExtResource("2")]([SubResource("Resource_road")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

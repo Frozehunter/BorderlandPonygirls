@@ -1,13 +1,20 @@
 [gd_resource type="Resource" script_class="Event" format=3 uid="uid://bqse6fwhkacs4"]
 
-[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_h5bs3"]
-[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_nsj6j"]
-[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_mvd6v"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="4"]
+
+[sub_resource type="Resource" id="Resource_road"]
+script = ExtResource("3")
+txt = "Trading Post road"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]
-script = ExtResource("3_mvd6v")
+script = ExtResource("4")
 titel = "Cattle Drive"
 description = "“Good decision, {TITLE}. My men will get the beasts ready, and you’ll be back on the road within the hour,” the old farmer promises. Sure enough, about an hour later, everything is prepared.
 
 The hu-cows seem slightly confused by the change in their daily routine, but they are far too docile to put up much resistance. Leashes are fastened to their collars, and you assign two of your men to lead them along as your warband sets out."
+content = Array[ExtResource("2")]([SubResource("Resource_road")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

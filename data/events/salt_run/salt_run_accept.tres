@@ -1,15 +1,22 @@
 [gd_resource type="Resource" script_class="Event" format=3 uid="uid://dotjglhyqkvfy"]
 
-[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="1"]
-[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1_5t56q"]
-[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_i3vc4"]
-[ext_resource type="Texture2D" uid="uid://cmwowqe86ua5p" path="res://assets/img/frozenhunter/salt_run.png" id="3_vh6ab"]
+[ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
+[ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
+[ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
+[ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="4"]
+[ext_resource type="Texture2D" uid="uid://cmwowqe86ua5p" path="res://assets/img/frozenhunter/salt_run.png" id="5"]
+
+[sub_resource type="Resource" id="Resource_road"]
+script = ExtResource("3")
+txt = "Goblin road"
+metadata/_custom_type_script = "uid://0o5ru8obqsel"
 
 [resource]
-script = ExtResource("1")
+script = ExtResource("4")
 titel = "Salt Run"
 description = "The clerk stamps a wax seal and slaps it onto the crate. “Inland road, Goblin Village. Don’t open it. Don’t sell it. Don’t let rain in. Bring the broken seal back if you want to be paid twice.”
 
 Two dockhands lash the crate behind your lead mare. The salt smell follows you out of the harbor."
-img = ExtResource("3_vh6ab")
+img = ExtResource("5")
+content = Array[ExtResource("2")]([SubResource("Resource_road")])
 metadata/_custom_type_script = "uid://47s8j4k2usde"

@@ -13,6 +13,7 @@
 [sub_resource type="Resource" id="Resource_flag"]
 script = ExtResource("5")
 remove_flag = Array[ExtResource("2")]([ExtResource("3"), ExtResource("4")])
+required_flag = Array[ExtResource("2")]([ExtResource("3")])
 metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 
 [sub_resource type="Resource" id="Resource_gold"]

@@ -7,7 +7,27 @@
 [ext_resource type="Resource" uid="uid://dotjglyb1jx30" path="res://data/combats/land_squid/land_squid_2.tres" id="5_ve06j"]
 [ext_resource type="Resource" uid="uid://du5io267h1t63" path="res://data/combats/land_squid/land_squid_3.tres" id="6_5401p"]
 [ext_resource type="Script" uid="uid://ct66od486dv7w" path="res://data/combats/combat.gd" id="7_oiipq"]
+[ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="8_flag"]
+[ext_resource type="Resource" uid="uid://dotjglyb1i4ff" path="res://data/flags/cave_salvage_02.tres" id="9_crate"]
+[ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="10_flagact"]
+[ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="11_gold"]
 [ext_resource type="Texture2D" uid="uid://wtucdn1g3v66" path="res://assets/img/lil_cthulhu/caveVictory.png" id="12_fn7r1"]
+[ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="13_repute"]
+
+[sub_resource type="Resource" id="Resource_crate"]
+script = ExtResource("10_flagact")
+add_flag = Array[ExtResource("8_flag")]([ExtResource("9_crate")])
+metadata/_custom_type_script = "uid://ta4rmpl13bdw"
+
+[sub_resource type="Resource" id="Resource_gold"]
+script = ExtResource("11_gold")
+amount = "{VICTORY_REWARD}"
+metadata/_custom_type_script = "uid://b2kag3ewwrnih"
+
+[sub_resource type="Resource" id="Resource_repute"]
+script = ExtResource("13_repute")
+amount = 2
+metadata/_custom_type_script = "uid://b4pvlbqjhib4e"
 
 [resource]
 script = ExtResource("7_oiipq")
@@ -17,8 +37,9 @@ enemy_descriptors = Array[String](["Hungry", "Pale", "Territorial"])
 enemy_names = Array[String](["Land-Squid"])
 victory_txt = "The land-squid’s tentacles thrash weakly across the cave floor before finally going limp. The creature releases one last shuddering breath, and then the cave falls silent.
 
-You have slain the land-squid!"
+You have slain the land-squid. With the beast dead, your men strap the imperial crate to a ponygirl and haul it back toward daylight."
 victory_img = ExtResource("12_fn7r1")
+victory_actions = Array[ExtResource("1_1o5v1")]([SubResource("Resource_crate"), SubResource("Resource_gold"), SubResource("Resource_repute")])
 defeat_txt = "The land-squid surges forward, its tentacles scattering your battered warband. With several of your men already wounded and the others struggling to hold their ground, you order a retreat.
 
 Your men drag the injured with them as you flee toward the cave entrance, scattering into the wild."

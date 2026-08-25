@@ -9,6 +9,7 @@ var id: StringName:
 	get:
 		return Utils.translate(description)
 @export var img : Texture2D
+@export var show_as_quest := true
 @export var content : Array[_EventContent]
 @export var open_actions : Array[Action]
 @export var close_actions : Array[Action]

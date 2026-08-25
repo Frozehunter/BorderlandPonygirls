@@ -29,7 +29,10 @@ func _update_quest_btns() -> void:
 		if not e.requirements_are_met(): continue
 
 		var b := LOCATION_BTN.instantiate()
-		b.text = "> Quest: %s" % e.titel
+		var label := e.titel
+		if e.show_as_quest:
+			label = "Quest: %s" % e.titel
+		b.text = "> %s" % label
 		quest_btns.add_child(b)
 
 		var ce := ChangeEvent.new()

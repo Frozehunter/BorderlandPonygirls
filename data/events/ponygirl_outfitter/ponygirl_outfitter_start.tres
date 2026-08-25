@@ -42,6 +42,7 @@ metadata/_custom_type_script = "uid://ta4rmpl13bdw"
 [resource]
 script = ExtResource("3_8k4q2")
 titel = "Ponygirl outfitter"
+show_as_quest = false
 description = "Tucked away behind an unassuming storefront is a surprisingly large shop filled with the rich scents of leather and oiled steel. Bridles, crops, whips, harnesses, saddles, and countless straps cover the walls and display tables. Every piece appears to be of exceptional quality.
 
 An open doorway at the back leads into a busy workshop. Tools move amid the flicker of a faint magical glow, suggesting that more than ordinary craftsmanship goes into the merchandise sold here.

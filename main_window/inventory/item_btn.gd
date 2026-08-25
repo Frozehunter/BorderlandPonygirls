@@ -21,9 +21,7 @@ func _ready() -> void:
 
 func _update_disabled():
 	await get_tree().physics_frame
-	if not LocationManager.current_location.has_item(item):
-		disabled = true
-	if shop && local_price > AttributesManager.gold:
+	if shop and local_price > AttributesManager.gold:
 		disabled = true
 	if disabled:
 		content_container.modulate = Color("819796")

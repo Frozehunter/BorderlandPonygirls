@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="6"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="7"]
 [ext_resource type="Texture2D" uid="uid://bnrjya8ab0cbb" path="res://assets/img/frozenhunter/night_dispatch.png" id="8"]
-[ext_resource type="Resource" uid="uid://cquestdispopen" path="res://data/flags/night_dispatch_opened.tres" id="9"]
+[ext_resource type="Resource" uid="uid://dk4s8n2ha6fmx" path="res://data/flags/night_dispatch_opened.tres" id="9"]
 
 [sub_resource type="Resource" id="Resource_flag"]
 script = ExtResource("4")

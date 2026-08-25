@@ -26,11 +26,14 @@ func _add_tooltips(actions : Array[Action]):
 	tooltip += "\n"
 	tooltip += "\n".join(TooltipManager.get_tooltips(actions))
 
-func _can_drop_data(_at_position: Vector2, _data: Variant) -> bool:
-	return true
+func _can_drop_data(_at_position: Vector2, data: Variant) -> bool:
+	return _pony_from_drop(data) != null
 
 func _drop_data(_at_position: Vector2, data: Variant) -> void:
-	PonygirlManager.focused_ponygirl = data as Ponygirl
+	var pony := _pony_from_drop(data)
+	if pony == null:
+		return
+	PonygirlManager.focused_ponygirl = pony
 	await get_tree().physics_frame
 	match care_type:
 		CARE.TRAINING:
@@ -40,3 +43,10 @@ func _drop_data(_at_position: Vector2, data: Variant) -> void:
 		CARE.CLIMAX:
 			ModalManager.open_care_result_modal(GameData.climax_actions)
 	GlobalSignals.update_ponygirls.emit()
+
+func _pony_from_drop(data: Variant) -> Ponygirl:
+	if data is Ponygirl:
+		return data
+	if data is Dictionary and data.get("ponygirl") is Ponygirl:
+		return data.ponygirl
+	return null

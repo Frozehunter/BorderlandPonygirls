@@ -1,11 +1,11 @@
-[gd_resource type="Resource" script_class="Event" format=3 uid="uid://cquestdispbrk1"]
+[gd_resource type="Resource" script_class="Event" format=3 uid="uid://b3h6k0m5vr8nt"]
 
 [ext_resource type="Script" uid="uid://cobxtb50wwmyj" path="res://data/actions/action.gd" id="1"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2"]
 [ext_resource type="Script" uid="uid://0o5ru8obqsel" path="res://data/events/event_btn.gd" id="3"]
 [ext_resource type="Script" uid="uid://low1eg5crao3" path="res://data/actions/change_event.gd" id="4"]
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="5"]
-[ext_resource type="Resource" uid="uid://cquestdispopen" path="res://data/flags/night_dispatch_opened.tres" id="6"]
+[ext_resource type="Resource" uid="uid://dk4s8n2ha6fmx" path="res://data/flags/night_dispatch_opened.tres" id="6"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="7"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="8"]
 [ext_resource type="Texture2D" uid="uid://bnrjya8ab0cbb" path="res://assets/img/frozenhunter/night_dispatch.png" id="9"]

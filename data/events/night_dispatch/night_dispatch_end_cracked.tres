@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://cm8dinv8ax8bq" path="res://data/flags/flag.gd" id="2"]
 [ext_resource type="Script" uid="uid://0k7s4yygygvw" path="res://data/events/event_content.gd" id="2_3ln0e"]
 [ext_resource type="Resource" uid="uid://d0wrqh8536kua" path="res://data/flags/night_dispatch_01.tres" id="3"]
-[ext_resource type="Resource" uid="uid://cquestdispopen" path="res://data/flags/night_dispatch_opened.tres" id="4"]
+[ext_resource type="Resource" uid="uid://dk4s8n2ha6fmx" path="res://data/flags/night_dispatch_opened.tres" id="4"]
 [ext_resource type="Script" uid="uid://ta4rmpl13bdw" path="res://data/actions/flag_action.gd" id="5"]
 [ext_resource type="Script" uid="uid://b2kag3ewwrnih" path="res://data/actions/change_gold.gd" id="6"]
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="7"]

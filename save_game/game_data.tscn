@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://b4pvlbqjhib4e" path="res://data/actions/change_repute.gd" id="4_gd741"]
 [ext_resource type="Resource" uid="uid://bgcens45256st" path="res://data/perks/brat.tres" id="4_nofhj"]
 [ext_resource type="Resource" uid="uid://3gwi3hkmfik7" path="res://data/perks/cock_hungry.tres" id="5_0asnj"]
-[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_loyalty.gd" id="5_gd741"]
+[ext_resource type="Script" uid="uid://cy0fnw6jwovce" path="res://data/actions/change_submission.gd" id="5_gd741"]
 [ext_resource type="Script" uid="uid://batgxym44h4w3" path="res://data/actions/change_arousal.gd" id="6_0v50s"]
 [ext_resource type="Script" uid="uid://ckie55vduhbok" path="res://templates/multiline_text.gd" id="6_efdwm"]
 [ext_resource type="Resource" uid="uid://d6nbm6jaxsip" path="res://data/perks/desperately_horny.tres" id="6_khn66"]

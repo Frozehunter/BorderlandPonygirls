@@ -5,7 +5,7 @@
 [ext_resource type="Resource" uid="uid://gvnc4a2ephqj" path="res://data/combats/ponygirl_race/goblin_village_race.tres" id="3_kndiu"]
 [ext_resource type="Script" uid="uid://47s8j4k2usde" path="res://data/events/event.gd" id="3_sxu30"]
 [ext_resource type="Script" uid="uid://bnjeril1f2cy8" path="res://data/actions/start_combat.gd" id="4_svp2w"]
-[ext_resource type="Script" uid="uid://ceventponysel1" path="res://data/events/event_pony_select.gd" id="8_pick"]
+[ext_resource type="Script" uid="uid://d8k3q1wn6ht4c" path="res://data/events/event_pony_select.gd" id="8_pick"]
 
 [sub_resource type="Resource" id="Resource_te1ec"]
 script = ExtResource("4_svp2w")
@@ -16,7 +16,7 @@ metadata/_custom_type_script = "uid://bnjeril1f2cy8"
 script = ExtResource("8_pick")
 button_txt = "Race with %s"
 actions = Array[ExtResource("1_20se1")]([SubResource("Resource_te1ec")])
-metadata/_custom_type_script = "uid://ceventponysel1"
+metadata/_custom_type_script = "uid://d8k3q1wn6ht4c"
 
 [resource]
 script = ExtResource("3_sxu30")

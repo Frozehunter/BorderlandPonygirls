@@ -156,9 +156,10 @@ static func get_perk_by_name(perk_name: StringName) -> Perk:
 	return null
 
 static func slots_free() -> bool:
-	return ponygirls.any(func(pony: Ponygirl) -> bool:
-		return pony == null
-	)
+	for pony in ponygirls:
+		if pony == null:
+			return true
+	return false
 
 static func add_ponygirl_to_slot(pony: Ponygirl, slot: int) -> bool:
 	if pony == null:

@@ -7,4 +7,5 @@
 script = ExtResource("1_script")
 image = ExtResource("1_icon")
 description = "Carry a sealed dispatch from the Trading Post to the Goblin Village."
+weight = 1
 metadata/_custom_type_script = "uid://cm8dinv8ax8bq"

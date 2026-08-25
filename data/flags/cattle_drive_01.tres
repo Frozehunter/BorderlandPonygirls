@@ -7,4 +7,5 @@
 script = ExtResource("1_st7c1")
 image = ExtResource("1_mnepf")
 description = "Drive a small herd of cow-girls to the Trading-Post in the south."
+weight = 5
 metadata/_custom_type_script = "uid://cm8dinv8ax8bq"
